@@ -1,3 +1,38 @@
-* {
-	font-family: ;
+html {
+	font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
+	margin: 0;
+	padding: 0;
+/* 
+	-webkit-text-size-adjust: 100%;
+ */
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.page {
+	max-width: 520px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+
+a {
+	color: #FFE9AA;
+	text-decoration: none;
+}
+
+.nav-button {
+	display: inline;
+	padding: 7%;
+}
+
+nav {
+	background: #628A9C;
+	padding: 30px 0 30px 0;
+}
+
+a:hover { 
+    border-bottom: 10px solid #FFE9AA;
 }
