@@ -13,7 +13,7 @@ body {
 }
 
 .page {
-	max-width: 520px;
+	max-width: 720px;
 	padding: 0 24px;
 	margin: 0 auto;
 }
@@ -35,4 +35,12 @@ nav {
 
 a:hover { 
     border-bottom: 10px solid #FFE9AA;
+}
+
+@media screen and (max-width: 635px) {
+	.columns {
+	width: auto !important;
+	float: none;
+	margin: 1.25em 0 0!important;
+	}
 }
