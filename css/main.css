@@ -44,3 +44,7 @@ a:hover {
 	margin: 1.25em 0 0!important;
 	}
 }
+
+input, textarea {
+	width: 100%;
+}
