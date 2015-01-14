@@ -1,5 +1,5 @@
 html {
-	font-family: 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
+	font-family: PT Serif;
 	margin: 0;
 	padding: 0;
 /* 
@@ -19,7 +19,8 @@ body {
 }
 
 a {
-	color: #FFE9AA;
+	color: black;
+	
 	text-decoration: none;
 }
 
@@ -29,8 +30,7 @@ a {
 }
 
 nav {
-	background: #628A9C;
-	padding: 30px 0 30px 0;
+background: #EBEBEB;	padding: 15px 0 15px 0;
 }
 
 a:hover { 
