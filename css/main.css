@@ -56,9 +56,11 @@ input, textarea {
    position:fixed;
    left:0px;
    bottom:0px;
-   height:30px;
    width:100%;
    background:#999;
+   height: 50px;
+   background: #F3EAEA;
+   line-height: 50px;
 }
 
 /* IE 6 */
@@ -68,10 +70,11 @@ input, textarea {
 }
 
 img {
-background-repeat: no-repeat;
+	max-width: 100%;
+	background-repeat: no-repeat;
     background-position: 50%;
     border-radius: 50%;
-	}
+}
 
 
 h1 { 
@@ -121,4 +124,63 @@ h5 {
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+}
+
+header h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+header p {
+	margin-top: 0;
+}
+
+.tagline {
+	font-family: littledays;
+	font-size: 2em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.main {
+	margin-top: 1em;
+}
+
+hr {
+	color: #F3EAEA;
+}
+
+.main a {
+	display: inline;
+}
+
+.date {
+	display: inline;
+	font-style: italic;
+}
+
+.entry {
+	margin-bottom: 2em;
+}
+
+i {
+padding-right: 10px;
+}
+
+.footer {
+	width: 100%;
+	position: relative;
+}
+
+.top {
+	line-height: 50px;
+	position: absolute;
+	padding: 0;
+	display: inline;
+	width: 100px;
+	text-align: center;
+	right: 0;
+	color: #F3EAEA;
+	height: 50px;
+	background: #FF9999;
 }
