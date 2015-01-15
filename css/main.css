@@ -19,9 +19,12 @@ body {
 }
 
 a {
-	color: black;
-	
-	text-decoration: none;
+	color: #FF9999;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    text-decoration: underline;
 }
 
 .nav-button {
@@ -34,7 +37,7 @@ background: #EBEBEB;	padding: 15px 0 15px 0;
 }
 
 a:hover { 
-    border-bottom: 10px solid #FFE9AA;
+    border-bottom: 5px solid #FF9999;
 }
 
 @media screen and (max-width: 635px) {
@@ -47,4 +50,75 @@ a:hover {
 
 input, textarea {
 	width: 100%;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+img {
+background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+	}
+
+
+h1 { 
+    display: block;
+    font-size: 2.5em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h3 { 
+    display: block;
+    font-size: 1.67em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h4 { 
+    display: block;
+    margin-top: 1.83em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+h5 { 
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
