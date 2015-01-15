@@ -1,10 +1,8 @@
 html {
-	font-family: PT Serif;
+	font-family: Georgia;
+	-webkit-text-size-adjust: 100%;
 	margin: 0;
 	padding: 0;
-/* 
-	-webkit-text-size-adjust: 100%;
- */
 }
 
 body {
@@ -15,41 +13,29 @@ body {
 .page {
 	max-width: 720px;
 	padding: 0 24px;
-	margin: 0 auto;
+	margin: 0 auto; /* center align */
 }
 
 a {
 	color: #FF9999;
+	text-decoration: underline;
     margin-top: 1.33em;
     margin-bottom: 1.33em;
     margin-left: 0;
     margin-right: 0;
-    text-decoration: underline;
-}
-
-.nav-button {
-	display: inline;
-	padding: 7%;
-}
-
-nav {
-background: #EBEBEB;	padding: 15px 0 15px 0;
 }
 
 a:hover { 
     border-bottom: 5px solid #FF9999;
 }
 
+/* Will make columns responsive */
 @media screen and (max-width: 635px) {
 	.columns {
-	width: auto !important;
-	float: none;
-	margin: 1.25em 0 0!important;
+		width: auto !important;
+		float: none;
+		margin: 1.25em 0 0!important;
 	}
-}
-
-input, textarea {
-	width: 100%;
 }
 
 #footer {
@@ -75,7 +61,6 @@ img {
     background-position: 50%;
     border-radius: 50%;
 }
-
 
 h1 { 
     display: block;
@@ -157,6 +142,7 @@ hr {
 .date {
 	display: inline;
 	font-style: italic;
+	font-size: 0.83em;
 }
 
 .entry {
@@ -164,7 +150,7 @@ hr {
 }
 
 i {
-padding-right: 10px;
+	padding-right: 10px;
 }
 
 .footer {
