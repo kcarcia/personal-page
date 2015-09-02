@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'charterregular';
+    src: url('charter/charter_regular-webfont.eot');
+    src: url('charter/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('charter/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'charterregular';
+}
+
+h1 {
+	font-size: 2.25em;  /* 36px */
+	line-height: 1.0em;
+}
+
+h2 {
+	font-size: 1.5em; /* 24px */
+	line-height: 0.667em;
+}
+
+p {
+	font-size: 1.313em; /* 21px */
+	line-height: 0.583em;
+}
+
+
+input {
+	font-size: 16px;
+	height: 25px;
+	border: solid 1px grey;
+	border-radius: 4px;
+	padding: 0px 4px;
+}
