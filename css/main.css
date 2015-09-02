@@ -1,6 +1,4 @@
 html {
-	font-family: Georgia;
-	-webkit-text-size-adjust: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -10,163 +8,88 @@ body {
 	padding: 0;
 }
 
-.page {
-	max-width: 720px;
-	padding: 0 24px;
-	margin: 0 auto; /* center align */
+.container {
+	background-color: yellow;
 }
 
-a {
-	color: #FF9999;
-	text-decoration: underline;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
-    margin-left: 0;
-    margin-right: 0;
+.container .introduction {
+	position: relative;
+}
+		
+.introduction {
+	background-color: red;
+	width: 200px;
+	margin: 0 auto;
 }
 
-a:hover { 
-    border-bottom: 5px solid #FF9999;
-}
 
-/* Will make columns responsive */
-@media screen and (max-width: 635px) {
-	.columns {
-		width: auto !important;
-		float: none;
-		margin: 1.25em 0 0!important;
+
+
+/* 
+@media screen and (min-width: 1px) {
+	.page {
+		max-width: 870px;
+		width: auto;
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
-
-#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   width:100%;
-   background:#999;
-   height: 50px;
-   background: #F3EAEA;
-   line-height: 50px;
+ */
+		
+/* 
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	font-family: "Univers LT W01 65 Bold", "Helvetica Neue", Arial, sans-serif;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1.2;
 }
 
-/* IE 6 */
-* html #footer {
-   position:absolute;
-   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+	font-family: "UniversLTW01-65BoldObli", "Helvetica Neue", Arial, sans-serif;
+	font-style: normal;
 }
 
-img {
-	max-width: 100%;
-	background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 50%;
+strong {
+	font-family: "Univers LT W01 65 Bold", "Helvetica Neue", Arial, sans-serif;
+	font-weight: normal;
 }
 
-h1 { 
-    display: block;
-    font-size: 2.5em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+em {
+	font-family: "UniversLTW01-55Oblique", "Helvetica Neue", Arial, sans-serif;
+	font-style: normal;
 }
 
 h2 {
-    display: block;
-    font-size: 2em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+	color: #999;
+	border-bottom: 1px solid #ddd;
+	padding: 0.85em 16px 0.375em;
+	margin: 1em -16px 1em;
+	text-transform: uppercase;
+	font-size: 1em;
+	letter-spacing: 2px;
 }
 
-h3 { 
-    display: block;
-    font-size: 1.67em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+h3 {
+	font-size: 1.4em;
 }
+ */
 
-h4 { 
-    display: block;
-    margin-top: 1.83em;
-    margin-bottom: 1.33em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+/* 
+a {
+	color: #a73e3f;
+	text-decoration: none;
+	-webkit-transition: color 0.24s ease;
+	-moz-transition: color 0.24s ease;
+	transition: color 0.24s ease;
 }
-
-h5 { 
-    display: block;
-    font-size: .83em;
-    margin-top: 1.67em;
-    margin-bottom: 1.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-
-header h1 {
-	text-align: center;
-	margin-bottom: 0;
-}
-
-header p {
-	margin-top: 0;
-}
-
-.tagline {
-	font-family: littledays;
-	font-size: 2em;
-	margin-bottom: 1em;
-	text-align: center;
-}
-
-.main {
-	margin-top: 1em;
-}
-
-hr {
-	color: #F3EAEA;
-}
-
-.main a {
-	display: inline;
-}
-
-.date {
-	display: inline;
-	font-style: italic;
-	font-size: 0.83em;
-}
-
-.entry {
-	margin-bottom: 2em;
-}
-
-i {
-	padding: 0 5px 0 5px;
-}
-
-.footer {
-	width: 100%;
-	position: relative;
-}
-
-.top {
-	line-height: 50px;
-	position: absolute;
-	padding: 0;
-	display: inline;
-	width: 100px;
-	text-align: center;
-	right: 0;
-	color: #F3EAEA;
-	height: 50px;
-	background: #FF9999;
-}
+ */
