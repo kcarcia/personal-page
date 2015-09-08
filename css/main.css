@@ -1,6 +1,14 @@
-html {
-	margin: 0;
-	padding: 0;
+@font-face {
+    font-family: 'charterregular';
+    src: url('charter/charter_regular-webfont.eot');
+    src: url('charter/charter_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('charter/charter_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'charterregular';
 }
 
 body {
@@ -8,21 +16,30 @@ body {
 	padding: 0;
 }
 
-.container {
-	background-color: yellow;
-}
-
-.container .introduction {
-	position: relative;
+html {
+	margin: 0;
+	padding: 0;
 }
 		
 .introduction {
-	background-color: red;
-	width: 200px;
+	position: relative;
+	text-align: center;
+	width: 100%;
 	margin: 0 auto;
+	padding: 25px 0px;
+
 }
 
+.container:first-child {
+	background-color: rgb(211, 192, 189);
 
+}
+
+.content {
+	width: 75%;
+	position: relative;
+	margin: 0 auto;
+}
 
 
 /* 
