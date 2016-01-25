@@ -1,45 +1,45 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-		<meta name="keywords" content="Kaitlyn Carcia, Demandware, User Interface Engineer, UIE, UMass Lowell, University of Massachusetts Lowell, Computer Science, Software Engineer, Front-End Web Developer">
-		<!-- FIX -->
-		<meta name="description" content="">
-
+		<meta charset="UTF-8">
 		<title>Kaitlyn Carcia</title>
-
-		<!-- index.html
-			 "Who am I?" (aka About Me) page
-			  Last modified August 7, 2015 -->
-
-		<!-- Favicon -->
-        <link rel="shortcut icon" href="/favicon.ico">
-        
-		<!-- Styles -->
-		<link href="css/arrange.css" rel="stylesheet">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
-		<!-- IE6 Style -->
-        <!--[if lte IE 6]>
-        <link rel="stylesheet" href="./css/ie6.css">
-        <![endif]-->
-    </head>
+		<script src="js/angular.js"></script>
+		<script src="js/angular-route.js"></script>
+		<script src="app/app.js"></script>
+		<script src="app/controllers.js"></script>
+		<script src="app/directives.js"></script>
+	</head>
 	<body>
 		<div class="container">
 			<div class="introduction">
-				<h2>Hello world. My name is</h2>
+				<h5>Hello world. My name is</h5>
 				<h1>Kaitlyn Carcia</h1>
-				<i class="fa fa-github"></i>
-				<i class="fa fa-linkedin-square"></i>
-				<i class="fa fa-file-pdf-o"></i>
+				<a href="https://www.linkedin.com/in/kaitlyncarcia"><i class="fa fa-linkedin-square"></i></a>
+				<a href="https://github.com/kcarcia"><i class="fa fa-github-square"></i></a>
+				<a href="https://twitter.com/KaitlynCarcia"><i class="fa fa-twitter-square"></i></a>
 			</div>
 		</div>
-		<div class="container">
+		<navigationbar></navigationbar>
+		</div>
+		<div class="container page">
 			<div class="content">
-			Test.
+				<div ng-view></div>
 			</div>
 		</div>
+		<br><br><br><br>
+
+		<footer>
+			<div class="content">
+				Copyright &copy; 2016 by Kaitlyn Carcia.  All rights reserved. Website built in AngularJS.
+			</div>
+			<br>
+		</footer>
 	</body>
 </html>

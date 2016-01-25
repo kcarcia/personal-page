@@ -1,0 +1,13 @@
+<div ng:controller="NavigationController" class="navbar navbar-default">
+	<div class="content">
+		<ul class="nav navbar-nav">
+			<li ng-repeat="item in items"><a href="{{ item.href }}" ng-class="{'active': item.title == states.activeItem}"
+			ng-click="states.activeItem=item.title">{{ item.title }}</a></li>
+<!-- 
+			<li><a href="#/">About</a></li>
+			<li><a href="#/blog">Blog</a></li>
+			<li><a href="#/contact">Contact</a></li>
+ -->
+		</ul>
+	</div>
+</div>
