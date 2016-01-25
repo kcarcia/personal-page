@@ -1,6 +1,7 @@
 angular.module('app.controllers', [
 	'app.directives'
 ])
+	// http://codepen.io/SkiWether/pen/lzjAq
 	.controller('NavigationController', ['$scope', function($scope){
 		$scope.states = {};
 		$scope.states.activeItem = 'About';
