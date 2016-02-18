@@ -1,14 +1,12 @@
-body {
-	position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-	font-family: 'Lora', serif;
-}
-
 html {
 	margin: 0;
 	padding: 0;
+}
+
+body {
+	position: relative; /* for sticky footer */
+	padding-bottom: 6em; /* space between footer and page content */
+	font-family: 'Lora', serif;
 }
 
 h1,
@@ -17,15 +15,16 @@ h3,
 h4, 
 h5, 
 h6 {
-	font-family: 'Lora', serif;
 	margin: 1.414em 0 0.5em;
+	font-family: 'Lora', serif;
   	font-weight: inherit;
   	line-height: 1.2;
 }
 
+/* Kaitlyn Carcia header */
 h1 {
-  margin-top: 0;
-  font-size: 4em;
+	margin-top: 0;
+	font-size: 4em;
 }
 
 h2 {
@@ -44,42 +43,104 @@ h5 {
 	font-size: 1.2em;
 }
 
-.page li, p, label {
+a {
+	color: #E79085; /* pink */
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Source: http://stackoverflow.com/questions/6382023/changing-the-color-of-a-hr-element */
+hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #735851; /* brown */
+    margin: 1em 0;
+    padding: 0; 
+}
+
+input, textarea {
+	display: block;
+    width: 100%;
+    background-color: #FFF;
+    height: 30px;
+    padding: 6px 12px;
+	font-family: 'Lora', serif;
+    font-size: 1em;
+    line-height: 1.2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input {
+	margin-bottom: 0.8em; /* margin between fields */
+}
+
+textarea {
+	resize: none; /* remove draggable bottom left hand corner */
+	height: 150px;
+}
+
+/* pink, instead of blue, outline */
+input:focus, textarea:focus {
+    outline: 0;
+    border-radius: 4px;
+    border: 2px solid #E79085; /* pink */
+}
+
+footer {
+	background-color: #F7EFD6; /* yellow */
+	position: absolute; /* for sticky-ness */
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px 0px;
+}
+
+label, li, p {
 	font-size: 1em;
 	line-height: 1.2;
 	margin: 0.8em 0 0;
 }
 
-.page li {
+li {
 	margin-left: 50px;
 	list-style-type: circle;
 }
 
-a {
-	color: #E79085;
+/* ----------------------------------------------------------------------------------- */
+/* Custom styles */
+
+/* active link in navigation
+	- font color must be pink to override link hover color */
+.active {
+	color: #E79085 !important; /* pink */
+	border-bottom: 5px solid #E79085; /* pink */
 }
 
+/* date for blog post */
+.date {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+/* introduction (I am Kaitlyn... ) w/ background image */
 .container:first-child {
 	background-image: url('../images/background.png');
-	color: #F7EFD6;
+	color: #F7EFD6; /* yellow */
 }
 
+/* content container */
 .content {
 	width: 50%;
 	position: relative;
 	margin: 0 auto;
-	color: #735851;
+	color: #735851; /* brown */
 }
 
-footer {
-	background-color: #F7EFD6;
-	position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-}
-
+/* introduction (I am Kaitlyn... ) */
 .introduction {
 	position: relative;
 	text-align: center;
@@ -88,6 +149,7 @@ footer {
 	padding: 50px 0px 150px 0px;
 }
 
+/* introduction (I am Kaitlyn... ) name text*/
 .introduction h1 {
 	font-family: 'Tangerine', cursive;
 	font-size: 6em;
@@ -95,102 +157,48 @@ footer {
 	margin-bottom: 10px;
 }
 
+/* fontawesome icons */
 .introduction i {
+	color: #F7EFD6;
 	font-size: 1.5em;
 }
 
-.introduction i {
-	color: #F7EFD6;
-}
-
+/* navigation bar */
 .navbar {
-	background-color: #F7EFD6;
+	background-color: #F7EFD6; /* yellow */
 }
 
-nav.main-nav {
-    background:#fff;
-    height:60px;
-    z-index:170;
-    margin:0 auto;
-    border-bottom:1px solid #dadada;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    text-align: center;
-}
-
+/* nav item */
 .navbar li {
-	width: 32%;
-	padding: 20px 0px;
-	text-align: center;
 	display: inline-block;
+	width: 32%;
+	padding: 15px 0px;
+	text-align: center;
+	margin: 0;
 }
 
+/* nav link */
 .navbar li a {
-	color: #E79085;
+	color: #E79085; /* pink */
 	font-size: 1em;
 	text-transform: uppercase;
 	text-decoration: none;
 }
 
-.navbar li a:hover, .active {
-	border-bottom: 5px solid #E79085;
+/* hover on nav link */
+.navbar li a:hover {
+	color: #735851; /* brown */
 }
 
-.date {
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-
-/* http://stackoverflow.com/questions/6382023/changing-the-color-of-a-hr-element */
-hr {
-	display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #735851;
-    margin: 1em 0;
-    padding: 0; 
-}
-
-input, textarea {
-	font-family: 'Lora', serif;
-	display: block;
-    width: 100%;
-    height: 30px;
-    padding: 6px 12px;
-    font-size: 1em;
-    line-height: 1.2;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-	
-}
-
-textarea {
-	resize: none;
-	height: 150px;
-}
-
-input {
-	margin-bottom: 0.8em;
-}
-
+/* submit button on contact form */
 .submit {
-	background-color: #E79085;
-	font-size: 1em;
 	margin-top: 0.8em;
-	border-radius: 4px;
 	padding: 10px;
-	border: none;
-	color: #F7EFD6;
+	background-color: #E79085; /* pink */
+	color: #F7EFD6; /* yellow */
 	font-family: 'Lora', serif;
+	font-size: 1em;
+	border-radius: 4px;
+	border: none;
 }
 
-input:focus {
-    outline: 0;
-    border-radius: 4px;
-    border: 2px solid #E79085;
-}

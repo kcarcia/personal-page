@@ -2,14 +2,36 @@
 <html lang="en" ng-app="app">
 	<head>
 		<meta charset="UTF-8">
+		
+		<!-- Keywords & description -->
+		<meta name="keywords" content="Kaitlyn Carcia, Software Engineer, UMass Lowell, Demandware, UIE, Women in Computing, Women in Technology">
+		<meta name="description" content="Software engineer atdemandware, former front-end web developer at UIE. I'm a geek who likes to gab.">
+
 		<title>Kaitlyn Carcia</title>
 		
+		<!--
+			Kaitlyn Carcia, Copyright (c) 2016. All rights reserved.
+			Personal Website, AngularJS app.
+			Latest Updated: 2/17/2016
+		-->
+		
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+
+		<!-- Font awesome -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Google fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" type="text/css">
+		
+		<!-- CSS styles -->
 		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<!-- AngularJS includes -->
 		<script src="js/angular.js"></script>
 		<script src="js/angular-route.js"></script>
 		<script src="app/app.js"></script>
@@ -17,6 +39,7 @@
 		<script src="app/directives.js"></script>
 	</head>
 	<body>
+		<!-- Page header -->
 		<div class="container">
 			<div class="introduction">
 				<h5>Hello world. My name is</h5>
@@ -26,20 +49,22 @@
 				<a href="https://twitter.com/KaitlynCarcia"><i class="fa fa-twitter-square"></i></a>
 			</div>
 		</div>
+		
+		<!-- Navigation bar -->
 		<navigationbar></navigationbar>
-		</div>
+		
+		<!-- Page content-->
 		<div class="container page">
 			<div class="content">
 				<div ng-view></div>
 			</div>
 		</div>
-		<br><br><br><br>
-
+		
+		<!-- Footer -->
 		<footer>
 			<div class="content">
 				Copyright &copy; 2016 by Kaitlyn Carcia.  All rights reserved. Website built in AngularJS.
 			</div>
-			<br>
 		</footer>
 	</body>
 </html>
