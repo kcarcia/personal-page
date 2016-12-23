@@ -1,204 +1,217 @@
-html {
-	margin: 0;
-	padding: 0;
-}
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Reenie+Beanie");
+html, body {
+  height: 100%;
+  margin: 0; }
 
-body {
-	position: relative; /* for sticky footer */
-	padding-bottom: 6em; /* space between footer and page content */
-	font-family: 'Lora', serif;
-}
+* {
+  font-family: "Alegreya", serif; }
 
-h1,
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-	margin: 1.414em 0 0.5em;
-	font-family: 'Lora', serif;
-  	font-weight: inherit;
-  	line-height: 1.2;
-}
-
-/* Kaitlyn Carcia header */
 h1 {
-	margin-top: 0;
-	font-size: 4em;
-}
+  font-size: 5em;
+  line-height: 1; }
 
 h2 {
-	font-size: 2.8em;
-}
+  font-size: 1.5em;
+  line-height: 1.0125; }
 
 h3 {
-	font-size: 2em;
-}
+  font-size: 1.25em;
+  line-height: 1.25; }
 
 h4 {
-	font-size: 1.5em;
-}
+  font-size: 1em;
+  line-height: 1.375; }
 
-h5 {
-	font-size: 1.2em;
-}
+p {
+  font-size: 1.25em;
+  line-height: 1.25em;
+  margin-bottom: 1em; }
 
-a {
-	color: #E79085; /* pink */
-}
+small {
+  font-size: 0.75em; }
 
-a:hover {
-	text-decoration: none;
-}
-
-/* Source: http://stackoverflow.com/questions/6382023/changing-the-color-of-a-hr-element */
 hr {
-	display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #735851; /* brown */
-    margin: 1em 0;
-    padding: 0; 
-}
+  border: 0;
+  height: 0;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #fff; }
 
-input, textarea {
-	display: block;
-    width: 100%;
-    background-color: #FFF;
-    height: 30px;
-    padding: 6px 12px;
-	font-family: 'Lora', serif;
-    font-size: 1em;
-    line-height: 1.2;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+section {
+  margin-bottom: 1.5em; }
 
 input {
-	margin-bottom: 0.8em; /* margin between fields */
-}
+  height: 30px; }
 
 textarea {
-	resize: none; /* remove draggable bottom left hand corner */
-	height: 150px;
-}
+  height: 150px;
+  resize: none;
+  /* remove draggable bottom left hand corner */ }
 
-/* pink, instead of blue, outline */
+input, textarea {
+  width: 89%;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0.5em;
+  font-size: 1.15em;
+  line-height: 1.075;
+  border-radius: 4px;
+  border: none;
+  margin-top: 0.25em; }
+
+/* custom input and textarea focus */
 input:focus, textarea:focus {
-    outline: 0;
-    border-radius: 4px;
-    border: 2px solid #E79085; /* pink */
-}
+  outline: 0;
+  border-radius: 4px;
+  border: 2px solid #9e9e9e; }
+
+button {
+  padding: 1em;
+  border-radius: 4px;
+  border: 5px solid #ff8482;
+  font-size: 1em;
+  background-color: #ff3333;
+  color: #fff; }
+
+button:focus {
+  outline: 0; }
+
+button:hover {
+  background-color: #ff8482;
+  cursor: pointer; }
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: #ff8482;
+  z-index: 2; }
+  nav ul {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: -3px;
+    overflow: hidden; }
+  nav ul.navbar {
+    margin-left: 15%; }
+    nav ul.navbar li a:hover:after {
+      border-top: 0.5em solid #ff3333 !important; }
+    nav ul.navbar li a:focus:after, nav ul.navbar li a.active:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-bottom: none;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      border-top: 0.5em solid #ff8482;
+      bottom: -0.5em;
+      margin-left: 0.5em; }
+  nav ul.header {
+    float: right;
+    margin-right: 15%;
+    margin-left: 0; }
+    nav ul.header h2 {
+      font-family: 'Reenie Beanie';
+      padding: 0.4em 0;
+      margin-right: 0.5em;
+      color: #fff;
+      float: right; }
+    nav ul.header i {
+      font-size: 1.125em; }
+    nav ul.header a {
+      padding: 0.9em 0.5em; }
+  nav li {
+    float: left; }
+    nav li a {
+      font-size: 1em;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      text-decoration: none; }
+    nav li a:hover {
+      color: #fff;
+      background-color: #ff3333; }
 
 footer {
-	background-color: #F7EFD6; /* yellow */
-	position: absolute; /* for sticky-ness */
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 10px 0px;
-}
+  text-align: center;
+  height: 5em; }
+  footer p {
+    line-height: 1em;
+    margin-bottom: 0; }
 
-label, li, p {
-	font-size: 1em;
-	line-height: 1.2;
-	margin: 0.8em 0 0;
-}
+.anchor {
+  display: block;
+  position: relative;
+  top: -4em;
+  visibility: hidden; }
 
-li {
-	margin-left: 50px;
-	list-style-type: circle;
-}
-
-/* ----------------------------------------------------------------------------------- */
-/* Custom styles */
-
-/* active link in navigation
-	- font color must be pink to override link hover color */
-.active {
-	color: #E79085 !important; /* pink */
-	border-bottom: 5px solid #E79085; /* pink */
-}
-
-/* date for blog post */
-.date {
-    font-size: 0.8em;
-    text-transform: uppercase;
-}
-
-/* introduction (I am Kaitlyn... ) w/ background image */
-.container:first-child {
-	background-image: url('../images/background.png');
-	color: #F7EFD6; /* yellow */
-}
-
-/* content container */
-.content {
-	width: 50%;
-	position: relative;
-	margin: 0 auto;
-	color: #735851; /* brown */
-}
-
-/* introduction (I am Kaitlyn... ) */
 .introduction {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-	padding: 50px 0px 150px 0px;
-}
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+  .introduction h1 {
+    font-family: "Reenie Beanie", cursive; }
+  .introduction button {
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 1.25em;
+    margin: 1em;
+    background-color: #ff3333;
+    color: #fff;
+    border: 5px solid #ff8482; }
+  .introduction button:hover {
+    background-color: #ff8482; }
+  .introduction a {
+    font-size: 1.25em;
+    color: #ff8482; }
+  .introduction a:hover {
+    color: #ff3333; }
+  .introduction .images {
+    margin: 1.25em; }
+    .introduction .images img {
+      user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -ms-user-select: none; }
 
-/* introduction (I am Kaitlyn... ) name text*/
-.introduction h1 {
-	font-family: 'Tangerine', cursive;
-	font-size: 6em;
-	line-height: 1.0;
-	margin-bottom: 10px;
-}
+.bio {
+  position: absolute;
+  z-index: 1;
+  top: 4em;
+  margin: 0 15%; }
+  .bio h4 {
+    text-transform: uppercase;
+    color: #ff8482; }
 
-/* fontawesome icons */
-.introduction i {
-	color: #F7EFD6;
-	font-size: 1.5em;
-}
+.contact {
+  min-height: 34em;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #e2e2e2; }
+  .contact h2 {
+    margin-top: 16px; }
+  .contact .anchor {
+    margin-top: -1em; }
+  .contact .form-group {
+    margin: 0.5em 0; }
+    .contact .form-group .success-indicator, .contact .form-group .error-indicator {
+      font-size: 1.5em;
+      margin-left: 0.25em;
+      display: none; }
+    .contact .form-group .success-indicator {
+      color: #5bab5e; }
+    .contact .form-group .error-indicator, .contact .form-group div.error {
+      color: #de281b; }
+    .contact .form-group div.error {
+      margin: 0.25em 0 0.5em 0; }
+  .contact .message-sent h3 {
+    padding: 1em 0; }
 
-/* navigation bar */
-.navbar {
-	background-color: #F7EFD6; /* yellow */
-}
+/* intially hidden on screen */
+nav, .bio, .message-sent {
+  display: none; }
 
-/* nav item */
-.navbar li {
-	display: inline-block;
-	width: 32%;
-	padding: 15px 0px;
-	text-align: center;
-	margin: 0;
-}
-
-/* nav link */
-.navbar li a {
-	color: #E79085; /* pink */
-	font-size: 1em;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-/* hover on nav link */
-.navbar li a:hover {
-	color: #735851; /* brown */
-}
-
-/* submit button on contact form */
-.submit {
-	margin-top: 0.8em;
-	padding: 10px;
-	background-color: #E79085; /* pink */
-	color: #F7EFD6; /* yellow */
-	font-family: 'Lora', serif;
-	font-size: 1em;
-	border-radius: 4px;
-	border: none;
-}
-
+/*# sourceMappingURL=main.css.map */
