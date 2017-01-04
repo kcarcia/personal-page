@@ -339,7 +339,7 @@ nav, .bio, .message-sent, .mobile-view {
 	    margin-left: 15%;
 	}
 
-	.header.non-mobile-view {
+	.message-sent iframe, .message-sent img, .header.non-mobile-view {
 		display: none;
 	}
 
@@ -373,6 +373,7 @@ nav, .bio, .message-sent, .mobile-view {
 }
 
 /* responsive capatcha */
+/* source: https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha/ */
 .g-recaptcha {
 	transform:scale(0.77);
 	-webkit-transform:scale(0.77);
