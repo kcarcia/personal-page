@@ -42,6 +42,12 @@
 	
 	<!-- Navigation bar -->
 	<nav>
+		<!-- Only shows my name in mobile view -->
+		<ul class="header mobile-view">
+			<li>
+				<h2>Kaitlyn Carcia</h2>
+			</li>
+		</ul>
 		<ul class="navbar">
 			<li>
 				<a class="active who" href="#who">
@@ -59,15 +65,16 @@
 				</a>
 			</li>
 		</ul>
-		<ul class="header">
+		<!-- Shows my name and linked/github links in non-mobile view -->
+		<ul class="header non-mobile-view">
 			<li>
 				<h2>Kaitlyn Carcia</h2>
 			</li>
 			<li>
-				<a href="https://github.com/kcarcia" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+				<a href="https://github.com/kcarcia" class="social-media" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/kaitlyncarcia" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/kaitlyncarcia" class="social-media" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 			</li>
 		</ul>
 	</nav> 
@@ -79,7 +86,8 @@
 			<span class="anchor" id="who"></span>
 			<h4>Who am I?</h4>
 			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit dui in convallis. Duis blandit fringilla ullamcorper. Phasellus laoreet diam id efficitur consequat. Mauris porta volutpat massa id ullamcorper. Curabitur ac mattis lectus. Vivamus non est et elit viverra porttitor. Etiam luctus lorem eget elit auctor condimentum. Praesent nec odio sit amet mi rutrum semper non sed nibh.</p>
+			<p>I am Kaitlyn Carcia, a user interface software engineer at the Salesforce Commerce Cloud in Burlington, MA. I graduated in 2015 from UMass Lowell with a degree in computer science, but... I never really thought of computers as a science. I have always seen computers as art, simply another medium to create and express ideas. At age 12, I created <a href="http://kaitlyncarcia.com/butterscotch/butterscotch.html" target="_blank">my first website</a> to honor my pet guinea pig, Butterscotch. I have been hooked ever since. Computers have empowered me to build and contribute to the world in some pretty awesome ways—from honoring my pet to visualizing data to helping others learn about user experience to e-commerce.</p>
+			<p>Outside of technology, I enjoy spending time with my family (including my 5 nieces and nephews), painting, and cooking. If you have not already guessed, pizza is my favorite food. My top pizza joints in the greater Boston area are Pizza Regina in Medford, MA, Tripoli in North Andover, MA, Flatbread Co. in Bedford, MA, and Capri Cafe in Reading, MA. I’m always open to suggestions.</p>
 		</section>
 
 		<!-- What - Experience -->
@@ -87,11 +95,13 @@
 			<span class="anchor" id="what"></span>
 			<h4>What do I do?</h4>
 			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit dui in convallis. Duis blandit fringilla ullamcorper. Phasellus laoreet diam id efficitur consequat. Mauris porta volutpat massa id ullamcorper. Curabitur ac mattis lectus. Vivamus non est et elit viverra porttitor. Etiam luctus lorem eget elit auctor condimentum. Praesent nec odio sit amet mi rutrum semper non sed nibh.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit dui in convallis. Duis blandit fringilla ullamcorper. Phasellus laoreet diam id efficitur consequat. Mauris porta volutpat massa id ullamcorper. Curabitur ac mattis lectus. Vivamus non est et elit viverra porttitor. Etiam luctus lorem eget elit auctor condimentum. Praesent nec odio sit amet mi rutrum semper non sed nibh.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit dui in convallis. Duis blandit fringilla ullamcorper. Phasellus laoreet diam id efficitur consequat. Mauris porta volutpat massa id ullamcorper. Curabitur ac mattis lectus. Vivamus non est et elit viverra porttitor. Etiam luctus lorem eget elit auctor condimentum. Praesent nec odio sit amet mi rutrum semper non sed nibh.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor hendrerit dui in convallis. Duis blandit fringilla ullamcorper. Phasellus laoreet diam id efficitur consequat. Mauris porta volutpat massa id ullamcorper. Curabitur ac mattis lectus. Vivamus non est et elit viverra porttitor. Etiam luctus lorem eget elit auctor condimentum. Praesent nec odio sit amet mi rutrum semper non sed nibh.</p>
-			<iframe width="500" height="300" src="https://www.youtube.com/embed/s_3mZRzApgI" frameborder="0" allowfullscreen></iframe>
+			<p>I am currently a user interface software engineer at the <a href="http://www.demandware.com" target="_blank">Salesforce Commerce Cloud</a> in Burlington, MA working in AngularJS to develop features for our cloud-based, enterprise scaled, e-commerce platform that aid our customers in daily merchandising operations. I have been heavily involved in the product life cycle from customer research to prototyping to development to delivery, and I have become very well acquainted with Javascript and AngularJS throughout the process.</p>
+			<p>I belonged to the <a href="http://www.cs.uml.edu/ecg" target="_blank">Engaging Computing Group</a> research lab at UMass Lowell for 3 years of my undergraduate career on the <a href="https://isenseproject.org" target="_blank">iSENSE project</a>, an open source web system for visualizing data. I joined in 2012 as a quality assurance engineer and later settled into release management. I served as a bridge between many teams—web, mobile, API, and educational. I embraced both the technical and communicative aspects of this role, and I worked a lot with source control, specially Git and GitHub.</p>
+			<div class="video-wrapper">
+				<iframe width="500" height="300" src="https://www.youtube.com/embed/s_3mZRzApgI" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<p>I spent 4 months of summer 2014 working at a tiny powerhouse, <a href="https://www.uie.com" target="_blank">User Interface Engineering (UIE)</a>, in North Andover, MA as a <a href="https://www.uie.com/meet-the-interns" target="_blank">front-end web developer intern</a>. My responsibilities were mainly technical—building web pages, working with the MailChimp API to streamline their email subscription system, as well as writing and executing quality assurance test plans for their conference registration system—but I was immersed in the world of design simply by “osmosis.” I worked alongside brilliant user experience experts including Jared Spool.</p>
+			<p>I continued my relationship with the wonderful folks at UIE throughout my senior year of college as a quality assurance contract engineer. I wrote and executed test plans to help the company in sustaining their bug-free and delightful conference registration system.</p>
 		</section>
 
 		<!-- Where - Contact -->

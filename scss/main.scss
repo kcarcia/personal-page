@@ -45,6 +45,14 @@ h4 {
 	line-height: 1.375;
 }
 
+a {
+	color: $light-red;
+}
+
+a:hover {
+	color: $red;
+}
+
 p {
 	font-size: 1.25em;
 	line-height: 1.25em;
@@ -259,6 +267,7 @@ footer {
 	z-index: 1;
 	top: 4em;
 	margin: 0 15%;
+	max-width: 70%;
 
 	h4 {
 		text-transform: uppercase;
@@ -310,6 +319,63 @@ footer {
 }
 
 /* intially hidden on screen */
-nav, .bio, .message-sent {
+nav, .bio, .message-sent, .mobile-view {
 	display: none;
+}
+
+/* hide social media links */
+@media (max-width: 600px) {
+	.social-media {
+		display: none;
+	}
+}
+
+/* show name above nav links */
+@media (max-width: 500px) {
+	.header.mobile-view {
+		display: block;
+		float: none;
+		margin-right: 0;
+	    margin-left: 15%;
+	}
+
+	.header.non-mobile-view {
+		display: none;
+	}
+
+	.anchor {
+    	top: -6em;
+	}
+
+	.bio {
+		top: 6em;
+	}
+}
+
+/* responsive video player */
+.video-wrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: $margin;
+
+    iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
+
+/* responsive capatcha */
+.g-recaptcha {
+	transform:scale(0.77);
+	-webkit-transform:scale(0.77);
+	transform-origin:0 0;
+	-webkit-transform-origin:0 0;
 }
